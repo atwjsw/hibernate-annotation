@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+    	<property name="connection.username">atwjsw</property>
+    	<property name="connection.password">123456</property>
+    	<property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+    	<property name="connection.url">jdbc:mysql:///annotation?useUnicode=true&amp;characterEncoding=UTF-8</property>
+    	<property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+    	
+    	<property name="show_sql">true</property>
+    	<!-- <property name="format_sql">true</property> -->
+    	<property name="hbm2ddl.auto">update</property>   
+    	
+    	<!-- 
+    	测试类级注解
+    	<mapping class="com.imooc.hibernate.annotation.clazz.Student"></mapping>
+    	测试属性级注解
+    	<mapping class="com.imooc.hibernate.annotation.attr.Student"></mapping> 
+    	<mapping class="com.imooc.hibernate.annotation.attr.StudentWithCompositeKey"></mapping>
+    	
+    	测试单向一对一注解
+    	<mapping class="com.imooc.hibernate.annotation.o2o.StudentO2O"></mapping>
+    	<mapping class="com.imooc.hibernate.annotation.o2o.IDCard"></mapping> 
+    	
+    	测试双向一对一注解
+    	<mapping class="com.imooc.hibernate.annotation.o2obd.StudentO2OBD"></mapping>
+    	<mapping class="com.imooc.hibernate.annotation.o2obd.IDCardBD"></mapping>
+    	
+    	测试单向多对一注解
+    	<mapping class="com.imooc.hibernate.annotation.m2o.StudentM2O"></mapping>
+    	<mapping class="com.imooc.hibernate.annotation.m2o.ClassRoom"></mapping> 
+    	
+    	测试单向一对多注解
+    	<mapping class="com.imooc.hibernate.annotation.o2m.StudentO2M"></mapping>
+    	<mapping class="com.imooc.hibernate.annotation.o2m.ClassRoomO2M"></mapping>
+    	
+    	测试双向一对多注解
+    	<mapping class="com.imooc.hibernate.annotation.o2mbd.StudentO2MBD"></mapping>
+    	<mapping class="com.imooc.hibernate.annotation.o2mbd.ClassRoomO2MBD"></mapping>-->
+    	
+    	<mapping class="com.imooc.hibernate.annotation.m2m.StudentM2M"></mapping>
+    	<mapping class="com.imooc.hibernate.annotation.m2m.TeacherM2M"></mapping>    	 	
+    </session-factory>
+</hibernate-configuration>
